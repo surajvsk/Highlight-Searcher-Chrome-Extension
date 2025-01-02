@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Results</title>
+  <style>
+    body {
+      width: 300px;
+      height: 400px;
+      font-family: Arial, sans-serif;
+      padding: 10px;
+    }
+    #searchResults {
+      margin-top: 10px;
+      max-height: 350px;
+      overflow-y: scroll;
+    }
+    .result {
+      margin-bottom: 10px;
+    }
+    .result a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    .result a:hover {
+      text-decoration: underline;
+    }
+    #deleteButton {
+      margin-top: 10px;
+      padding: 5px 10px;
+      background-color: #ff5252;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    #deleteButton:hover {
+      background-color: #ff1744;
+    }
+  </style>
+</head>
+<body>
+  <h3>Highlighted History</h3>
+  <div id="searchResults"></div>
+  <button id="deleteButton">Delete All Highlights</button>
+  <script src="popup.js"></script>
+</body>
+</html>
